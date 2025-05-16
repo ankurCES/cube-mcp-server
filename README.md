@@ -12,15 +12,19 @@ Sample Repo for Connecting to Cube.dev pre-aggregations and makes time series da
 
 Install `uv`
 
-`curl -LsSf https://astral.sh/uv/install.sh | sh`
+``` shell
+curl -LsSf https://astral.sh/uv/install.sh | sh
+```
 
 Verify Installation
 `uv --version`
 
 Clone the repo and activate the virtual environment
 
-`git clone <repo>`
-`source .venv/bin/activate`
+``` shell
+> git clone <repo>
+> source .venv/bin/activate
+```
 
 Create the env file
 
