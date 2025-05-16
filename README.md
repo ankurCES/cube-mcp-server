@@ -17,24 +17,30 @@ curl -LsSf https://astral.sh/uv/install.sh | sh
 ```
 
 Verify Installation
-`uv --version`
+``` shell
+uv --version
+```
 
 Clone the repo and activate the virtual environment
 
 ``` shell
-> git clone <repo>
-> source .venv/bin/activate
+git clone https://github.com/ankurCES/cube-mcp-server
+source .venv/bin/activate
 ```
 
 Create the env file
 
-`cp sample.env.json env.json`
+``` shell 
+cp sample.env.json env.json
+```
 
 Add the necessary configs and save.
 
 Next run the below
 
-`uv add "mcp[cli]" pandas pyarrow matplotlib requests PyJWT`
+``` shell
+uv add "mcp[cli]" pandas pyarrow matplotlib requests PyJWT
+```
 
 ### Add config for Claude Desktop
 
@@ -51,4 +57,6 @@ Next run the below
 
 ### To Run
 
-`uv run main.py`
+``` shell
+uv run main.py
+```
